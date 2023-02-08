@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+                <a class="nav-link active" href="#" onclick="display('section1Upcomingmovies')">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#" onclick="display('section-notification-page')">Notification</a>
+                <a class="nav-link" href="#">Help</a>
+                <a class="nav-link" href="#" onclick="display('section-about-page')">About</a>
+
+            </div>
+        </div>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class=" btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+
+
+
+
+
+
+
+    <div id=sectionmovibuffs>
+        <div class=" moviebuffs-bg-container d-flex flex-column justify-content-center">
+
+            <div class="container">
+                <div class="row">
+                    <div class=col-12>
+                        <div class="moviebuffs-card m-auto">
+
+
+                            <h1 class="movibuffs-heading">MovieBuffs</h1>
+                            <img src="https://wallpaper.dog/large/5486443.jpg" class="moviebuffs-logo" />
+                            <p class="movibuffs-caption">Book your best seat.</p>
+
+                            <button class="movibuffs-page-button" onclick="display('section1Upcomingmovies')"> BookNow </button>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section1Upcomingmovies">
+        <h1 class="main-heading">UpcomingMovies </h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner ">
+                <div class="carousel-item active" onclick="display('section2veeramallu')">
+                    <img src="https://m.media-amazon.com/images/M/MV5BM2E3ZTY3ZTUtMTQ0MC00ZGIxLWIxYTAtYjkwMDI2ZDZhZjY5XkEyXkFqcGdeQXVyODEyNjEwMDk@._V1_.jpg" class="d-block w-100 top-corousel" alt="...">
+                </div>
+                <div class="carousel-item " onclick="display('section2kabza')">
+                    <img src="https://static.toiimg.com/thumb/msid-86293975,width-1280,height-720,resizemode-4/.jpg" class="d-block w-100 top-corousel" alt="...">
+                </div>
+                <div class="carousel-item" onclick="display('section2dasara')">
+                    <img src="https://www.koimoi.com/wp-content/new-galleries/2022/01/nani-starrer-dasara-makers-readying-village-set-at-a-whopping-rs-12-cr-001.jpg" class="d-block w-100 top-corousel" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <h1 class="main-heading">Recommended movies </h1>
+
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+
+                    <div class="d-flex flex-column " onclick="display('section2-waltairveerayya')">
+                        <img src="https://www.telugubulletin.com/wp-content/uploads/schema-and-structured-data-for-wp/Waltair_Veerayya-1200x1801.jpeg" class="wallpaper-lenghts" />
+
+                        <p class="p1"> 9/10 85.4k Votes</p>
+
+                        <h class="heading ">Waltair Veerayya</h>
+                        <p class="p2">Action/Entertainment</p>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="d-flex flex-column " onclick="display('section2-veerasimhareddy')">
+
+                        <img src="https://static.toiimg.com/thumb/msid-97004687,imgsize-235664,width-400,resizemode-4/97004687.jpg" class="wallpaper-lenghts" />
+                        <p class="p1">8.3/10 75.3k Votes</p>
+                        <p class="heading">Veera Simha Reddy</p>
+                        <p class="p2">Action/Drama</p>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="d-flex flex-column margin" onclick="display('section2-Vaarisu')">
+                        <img src="https://static.moviecrow.com/gallery/20221025/207335-vaarisu.jpg" class="wallpaper-lenghts" />
+                        <p class="p1">8/10 21.1k Votes</p>
+                        <p class="heading">Vaarisu</p>
+                        <p class="p2">Family/Entertainment</p>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="d-flex flex-column margin" onclick="display('section2-Thunivvu')">
+
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/thunivu-et00340798-1666182985.jpg" class="wallpaper-lenghts " />
+                        <p class="p1">8.4/10 10.4k Votes</p>
+                        <p class="heading">Thunivvu</p>
+                        <p class="p2">Thriller/Drama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+
+
+
+
+
+
+    <div id="section2-waltairveerayya">
+        <h1 class="main-heading">Trailer</h1>
+
+        <div class="embed-responsive embed-responsive-16by9 top-vedio">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4m5Knn3Sc-Y?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex flex-row">
+            <img src="https://www.telugubulletin.com/wp-content/uploads/schema-and-structured-data-for-wp/Waltair_Veerayya-1200x1801.jpeg" class="wallpaper-lenghts-secondpage" />
+            <div class="d-flex flex-column">
+                <h class="first-heading">Waltair Veerayya</h>
+                <p>2h 40m • Action/Drama • UA • 13 Jan, 2023</p>
+                <h class="second-heading">about the movie</h>
+                <p>One man, two wives, and two sons who don`t know the other exists. While one son grows up in the Vizag port areas and emerges as a leader of the masses, the other grows up to be a powerful police officer from the Telangana region. But when the two meet, how will this sibling rivalry play out?</p>
+                <h class="second-heading moviecast-padding"> Cast</h>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Chiranjeevi_filmography" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/chiranjeevi-419-19-09-2017-02-00-38.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Ravi_Teja_filmography" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravi-teja-1848-1647947897.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Shruti_Haasan_filmography" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/shruti-haasan-29670-18-09-2017-05-02-43.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Catherine_Tresa" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/catherine-tresa-17638-24-03-2017-14-08-50.jpg" class="moviecast" /> </a>
+                </div>
+                <button class="booking-button" onclick="display('sectionbookings-page')">BookNow</button>
+            </div>
+
+        </div>
+        <button class="secondpage-button" onclick="display('section1Upcomingmovies')">back</button>
+    </div>
+
+
+    <div id="section2-veerasimhareddy">
+        <h1 class="main-heading">Trailer</h1>
+        <div class="embed-responsive embed-responsive-16by9 top-vedio">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5EcZP23RY9o?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex flex-row">
+            <img src="https://static.toiimg.com/thumb/msid-97004687,imgsize-235664,width-400,resizemode-4/97004687.jpg" class="wallpaper-lenghts-secondpage" />
+            <div class="d-flex flex-column">
+                <h class="first-heading">Veera Simha Reddy</h>
+                <p>2h 40m • Action/Family • UA • 12 Jan, 2023</p>
+                <h class="second-heading">about the movie</h>
+                <p> Jai Simha Reddy, a businessman in Turkey and doting son of Meenakshi falls in love with Eesha. On the verge of his marriage, Jai comes to know the secret about his father Veera Simha Reddy who comes to Turkey to settle the marriage, which is when Jai meets his father for the first time. Things take a drastic turn around when Veera`s past follows him to Turkey.</p>
+                <h class="second-heading moviecast-padding"> Cast</h>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Nandamuri_Balakrishna_filmography" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/nandamuri-balakrishna-282-24-03-2017-17-27-29.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Varalaxmi_Sarathkumar" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/varalaxmi-sarathkumar-32998-16-10-2018-01-55-44.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Shruti_Haasan_filmography" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/shruti-haasan-29670-18-09-2017-05-02-43.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Duniya_Vijay" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/duniya-vijay-42357-26-03-2018-11-37-07.jpg" class="moviecast" /> </a>
+                </div>
+                <button class="booking-button" onclick="display('sectionbookings-page-veerasimhareddy')">BookNow</button>
+            </div>
+        </div>
+        <button class="secondpage-button" onclick="display('section1Upcomingmovies')">back</button>
+    </div>
+
+
+
+    <div id="section2-Vaarisu">
+        <h1 class="main-heading">Trailer</h1>
+        <div class="embed-responsive embed-responsive-16by9 top-vedio">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9fux9swQ5AQ?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex flex-row">
+            <img src="https://static.moviecrow.com/gallery/20221025/207335-vaarisu.jpg" class="wallpaper-lenghts-secondpage" />
+            <div class="d-flex flex-column">
+                <h class="first-heading">Vaarisu</h>
+                <p>2h 50m • Family/Entertainment • UA • 14 Jan, 2023</p>
+                <h class="second-heading">about the movie</h>
+                <p>Vijay, The prodigal son of business tycoon Rajendran agrees to take over the reins of the business, much to the chagrin of his brothers. But can Vijay prove himself to be a worthy Vaarasudu and also reunite his now-broken family?</p>
+                <h class="second-heading moviecast-padding"> Cast</h>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Vijay_(actor)" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vijay-2461-20-12-2017-04-37-08.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Rashmika_Mandanna" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/rashmika-mandanna-1076783-28-12-2016-12-20-39.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Jayasudha" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jayasudha-5813-19-09-2017-11-54-42.jpg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/R._Sarathkumar" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/r.-sarathkumar-33822-24-03-2017-16-03-13.jpg" class="moviecast" /> </a>
+                </div>
+                <button class="booking-button" onclick="display('sectionbookings-page-Vaarisu')">BookNow</button>
+            </div>
+
+
+        </div>
+        <button class="secondpage-button" onclick="display('section1Upcomingmovies')">back</button>
+    </div>
+
+
+
+
+
+
+    <div id="section2-Thunivvu">
+        <h1 class="main-heading">Trailer</h1>
+        <div class="embed-responsive embed-responsive-16by9 top-vedio">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jnBZboK17_A  ?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex flex-row">
+            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/thunivu-et00340798-1666182985.jpg" class="wallpaper-lenghts-secondpage" />
+            <div class="d-flex flex-column">
+                <h class="first-heading">Thunivvu</h>
+                <p>2h 50m • Thriller/Drama • UA • 12 Jan, 2023</p>
+                <h class="second-heading">about the movie</h>
+                <p>A gang goes to rob a bank only to find that there`s already a criminal mastermind holding it for ransom, but his identities and motives behind the heist remains mysterious. As they plan to collect the bounty and disappear without a trace, their crimes and their past slowly catches up with them.</p>
+                <h class="second-heading moviecast-padding"> Cast</h>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Ajith_Kumar" target="_blank">
+                        <img src="https://in.bookmyshow.com/person/ajith-kumar/88" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Manju_Warrier" target="_blank">
+                        <img src="https://in.bookmyshow.com/person/manju-warrier/1045703" class="moviecast" /> </a>
+                    <a href="" target="_blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/john-kokken-2025026-1672744770.jpg" class="moviecast" /> </a>
+
+                </div>
+                <button class="booking-button" onclick="display('sectionbookings-page-Thunivvu')"> BookNow</button>
+            </div>
+
+        </div>
+        <button class="secondpage-button" onclick="display('section1Upcomingmovies')">back</button>
+    </div>
+
+
+    <div id="section2veeramallu">
+        <div class="embed-responsive embed-responsive-16by9 top-vedio">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J8lmfiCr7o0?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex flex-row">
+            <img src="https://assets.thehansindia.com/h-upload/2021/03/11/1600x960_1036732-hari-hara-veera-mallu.jpg" class="wallpaper-lenghts-secondpage" />
+            <div class="d-flex flex-column">
+                <h class="first-heading">Hari Hara Veera Mallu </h>
+
+                <h class="second-heading">about the movie</h>
+                <p>releasing soon</p>
+                <button class="booking-button">N/A</button>
+                <h class="second-heading moviecast-padding"> Cast</h>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Pawan_Kalyan#Acting_career" target="-blank">
+                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/pawan-kalyan-26911-19-09-2017-02-46-38.jpg" class="moviecast" /> </a>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="secondpage-button" onclick="display('section1Upcomingmovies')">back</button>
+    </div>
+
+
+
+    <div id="section2kabza">
+        <div class="embed-responsive embed-responsive-16by9 top-vedio">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gQRqe1nIZEM?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex flex-row">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDVjODVlMWMtMjU2ZC00MzE0LTk1NzQtNzJmNGZmOGJmMzUwXkEyXkFqcGdeQXVyODA4MDA0Mjg@._V1_.jpg" class="wallpaper-lenghts-secondpage" />
+            <div class="d-flex flex-column">
+                <h class="first-heading">kabza</h>
+
+                <h class="second-heading">about the movie</h>
+                <p>releasing soon</p>
+                <button class="booking-button">N/A</button>
+                <h class="second-heading moviecast-padding"> Cast</h>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Sudeepa" target="-blank">
+                        <img src="https://www.bollywoodhungama.com/wp-content/uploads/2020/07/WhatsApp-Image-2020-07-16-at-2.04.09-PM.jpeg" class="moviecast" /> </a>
+                    <a href="https://en.wikipedia.org/wiki/Upendra_(actor)" target="-blank">
+                        <img src="https://resize.indiatvnews.com/en/resize/newbucket/730_-/2017/08/upendra-1502537423.jpg" class="moviecast" /> </a>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="secondpage-button" onclick="display('section1Upcomingmovies')">back</button>
+    </div>
+
+
+    <div id="section2dasara">
+        <div class="embed-responsive embed-responsive-16by9 top-vedio">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GT7th52DKj0?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex flex-row">
+            <img src="https://moviegalleri.net/wp-content/uploads/2022/03/Actor-Nani-Dasara-Movie-First-Look-HD-Poster.jpg" class="wallpaper-lenghts-secondpage" />
+            <div class="d-flex flex-column">
+                <h class="first-heading">dasara</h>
+
+                <h class="second-heading">about the movie</h>
+                <p>releasing soon</p>
+                <button class="booking-button">N/A</button>
+                <h class="second-heading moviecast-padding"> Cast</h>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Nani_(actor)" target="-blank">
+                        <img src="https://pbs.twimg.com/profile_images/1531838427431583745/f0-6nCQG_400x400.jpg" class="moviecast" /></a>
+                    <a href="https://en.wikipedia.org/wiki/Keerthy_Suresh" target="-blank">
+                        <img src="https://www.wallsnapy.com/img_gallery/keerthisuresh-new-photos-download-4542836.jpg" class="moviecast" /> </a>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="secondpage-button" onclick="display('section1Upcomingmovies')">back</button>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="sectionbookings-page">
+
+
+
+        <div class="bookingpage-background-image">
+            <h class="bookingpage-heading"> Waltair Veerayya - Telugu</h>
+            <div class="d-flex flex-row small-captions-booking-page">
+                <p>U/A</p>
+                <p>Action</p>
+                <p>Drama</p>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="d-flex flex-row">
+            <h class="theater-name">AMB Cinemas</h>
+            <div class="movie-timings-margin ">
+                <button>10.00</button>
+                <button>2.00</button>
+                <button>6.00</button>
+                <button>9.00</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="d-flex flex-row">
+
+            <h class="theater-name">Alankar 70mm</h>
+            <div class="movie-timings-margin ">
+                <button>10.30</button>
+                <button>2.30</button>
+                <button>6.30</button>
+                <button>9.30</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="d-flex flex-row">
+            <h class="theater-name">Arjun 70mm</h>
+            <div class="movie-timings-margin ">
+                <button>11.00</button>
+                <button>2.30</button>
+                <button>7.00</button>
+                <button>10.00</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="d-flex flex-row">
+            <h class="theater-name">Durga mahal</h>
+            <div class="movie-timings-margin ">
+                <button>10.00</button>
+                <button>2.00</button>
+                <button>6.00</button>
+                <button>9.00</button>
+            </div>
+        </div>
+
+        <hr />
+        <button onclick="display('section2-waltairveerayya')">back</button>
+    </div>
+
+
+
+    <div id="sectionbookings-page-veerasimhareddy">
+
+        <div class="bookingpage-background-image">
+            <h class="bookingpage-heading"> VeeraSimhareddy- Telugu</h>
+            <div class="d-flex flex-row small-captions-booking-page">
+                <p>U/A</p>
+                <p>Action</p>
+                <p>Drama</p>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">AMB Cinemas</h>
+            <div class="movie-timings-margin ">
+                <button>10.00</button>
+                <button>2.00</button>
+                <button>6.00</button>
+                <button>9.00</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+
+            <h class="theater-name">Alankar 70mm</h>
+            <div class="movie-timings-margin ">
+                <button>10.30</button>
+                <button>2.30</button>
+                <button>6.30</button>
+                <button>9.30</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">Arjun 70mm</h>
+            <div class="movie-timings-margin ">
+                <button>11.00</button>
+                <button>2.30</button>
+                <button>7.00</button>
+                <button>10.00</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">Durga mahal</h>
+            <div class="movie-timings-margin ">
+                <button>10.00</button>
+                <button>2.00</button>
+                <button>6.00</button>
+                <button>9.00</button>
+            </div>
+        </div>
+        <hr />
+        <button onclick="display('section2-veerasimhareddy')">back</button>
+    </div>
+
+    <div id="sectionbookings-page-Vaarisu">
+
+        <div class="bookingpage-background-image">
+            <h class="bookingpage-heading">Vaarisu - Tamil</h>
+            <div class="d-flex flex-row small-captions-booking-page">
+                <p>U/A</p>
+                <p>Action</p>
+                <p>Drama</p>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">AMB Cinemas</h>
+            <div class="movie-timings-margin ">
+                <button>10.00</button>
+                <button>2.00</button>
+                <button>6.00</button>
+                <button>9.00</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+
+            <h class="theater-name">Alankar 70mm</h>
+            <div class="movie-timings-margin ">
+                <button>10.30</button>
+                <button>2.30</button>
+                <button>6.30</button>
+                <button>9.30</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">Arjun 70mm</h>
+            <div class="movie-timings-margin ">
+                <button>11.00</button>
+                <button>2.30</button>
+                <button>7.00</button>
+                <button>10.00</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">Durga mahal</h>
+            <div class="movie-timings-margin ">
+                <button>10.00</button>
+                <button>2.00</button>
+                <button>6.00</button>
+                <button>9.00</button>
+            </div>
+        </div>
+        <hr />
+        <button onclick="display('section2-Vaarisu')">back</button>
+    </div>
+
+    <div id="sectionbookings-page-Thunivvu">
+
+        <div class="bookingpage-background-image">
+            <h class="bookingpage-heading">Thunivvu - Tamil</h>
+            <div class="d-flex flex-row small-captions-booking-page">
+                <p>U/A</p>
+                <p>Action</p>
+                <p>Drama</p>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">AMB Cinemas</h>
+            <div class="movie-timings-margin ">
+                <button>10.00</button>
+                <button>2.00</button>
+                <button>6.00</button>
+                <button>9.00</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+
+            <h class="theater-name">Alankar 70mm</h>
+            <div class="movie-timings-margin ">
+                <button>10.30</button>
+                <button>2.30</button>
+                <button>6.30</button>
+                <button>9.30</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">Arjun 70mm</h>
+            <div class="movie-timings-margin ">
+                <button>11.00</button>
+                <button>2.30</button>
+                <button>7.00</button>
+                <button>10.00</button>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex flex-row">
+            <h class="theater-name">Durga mahal</h>
+            <div class="movie-timings-margin ">
+                <button>10.00</button>
+                <button>2.00</button>
+                <button>6.00</button>
+                <button>9.00</button>
+            </div>
+        </div>
+        <hr />
+        <button onclick="display('section2-Thunivvu')">back</button>
+    </div>
+
+
+
+    <div id="section-notification-page">
+        <p class="Notification-page-para">This page is empty</p>
+        <button onclick="display('section1Upcomingmovies')">back</button>
+    </div>
+
+
+
+    <div id="section-about-page">
+        <div class=" moviebuffs-bg-container d-flex flex-column justify-content-center">
+            <div class="container row col-12 ">
+                <div class=" moviebuffs-card m-auto">
+
+                    <h1 class="movibuffs-heading">MovieBuffs</h1>
+                    <img src="https://wallpaper.dog/large/5486443.jpg" class="moviebuffs-logo" />
+                    <p class="movibuffs-caption">Book your best seat.</p>
+                </div>
+            </div>
+            <button onclick="display('section1Upcomingmovies')">back</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+
+
+
+</body>
+
+</html>
