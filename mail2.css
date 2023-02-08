@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.moviebuffs-bg-container {
+    background-image: url("https://st2.depositphotos.com/1292719/8046/v/950/depositphotos_80467092-stock-illustration-colorful-vector-hand-drawn-doodle.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.moviebuffs-logo {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+}
+
+.moviebuffs-card {
+    text-align: center;
+    background-color: #F5F5DC;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.movibuffs-heading {
+    font-family: "caveat";
+    text-decoration: underline;
+    color: #20B2AA;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.movibuffs-caption {
+    font-family: "lobster";
+    font-style: italic;
+    font-size: 25px;
+}
+
+.movibuffs-page-button {
+    height: 36px;
+    width: 138px;
+    background-color: #00FF00;
+    color: black;
+    border-radius: 20px;
+    border-width: 0px;
+}
+
+
+
+
+
+
+
+
+.top-corousel {
+    height: 400px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+
+}
+
+.main-heading {
+    color: Black;
+    font-family: "Playfair";
+    font-size: 25px;
+    font-style: italic;
+    padding: 10px;
+    margin: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.wallpaper-lenghts {
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 300px;
+    width: 250px;
+
+}
+
+.p1 {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 250px;
+}
+
+
+
+
+.p2 {
+    color: grey;
+    font-family: "normal";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.heading {
+    color: Black;
+    font-family: "Playfair";
+    font-size: 25px;
+    font-style: italic;
+    padding: 10px;
+    margin: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.booking-button {
+    background-color: #33de69;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 30px;
+    width: 100px;
+
+}
+
+
+
+.top-vedio {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 10px;
+
+}
+
+.wallpaper-lenghts-secondpage {
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 55vh;
+    width: 48vh;
+    margin: 10px;
+}
+
+.first-heading {
+    font-family: "Playfair";
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.second-heading {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.secondpage-button {
+    margin: 10px;
+}
+
+.moviecast {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+
+}
+
+.moviecast-padding {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+.booking-page-wallpaper {
+    height: 300px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+
+}
+
+.bookingpage-background-image {
+    background-color: #465f7a;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bookingpage-heading {
+    color: white;
+    font-size: 30px;
+    font-family: "roboto";
+    font-weight: bold;
+}
+
+.small-captions-booking-page {
+    color: white;
+    padding: 10px;
+}
+
+.theater-name {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.movie-timings-buttons {
+    border-radius: 5px;
+    height: 30px;
+    margin: 30px;
+}
+
+.movie-timings-margin {
+    margin: 30px;
+}
+
+
+
+
+
+
+.Notification-page-para {
+    text-align: center;
+    padding: 10px;
+}
